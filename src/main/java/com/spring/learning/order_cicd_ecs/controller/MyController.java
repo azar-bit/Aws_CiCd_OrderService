@@ -18,7 +18,7 @@ public class MyController {
 
     @Autowired
     private OrderDao orderDao;
-    @GetMapping("/")
+    @GetMapping("/s")
     public String Message() {
         return ":: Hello Azaruddin Have a Good day :: ";
     }
