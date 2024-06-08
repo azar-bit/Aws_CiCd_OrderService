@@ -26,6 +26,6 @@ public class MyController {
     @GetMapping
     public List<Order> getOrderList() {
         return orderDao.getOrders()
-                .stream().sorted(Comparator.comparing(Order::getPrice)).collect(Collectors.toList());
+                .stream().sorted(Comparator.comparing(Order::getPrice).reversed()).collect(Collectors.toList());
     }
 }
